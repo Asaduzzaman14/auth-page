@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './login.css'
 import './verification.css'
+import banner from '../images/Banner.png'
+import banner1 from '../images/Banner (1).png'
+import banner2 from '../images/Banner (2).png'
+
 
 const Verification = () => {
     return (
@@ -37,7 +41,11 @@ const Verification = () => {
 
                 </div>
                 <div className='banner-section'>
-                    <img className='banner' src="/banner.png" alt="" />
+                    <div className='banners'>
+                        <img className='banner' src={banner} alt="" />
+                        <img className='banner1' src={banner1} alt="" />
+                        <img className='banner2' src={banner2} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
