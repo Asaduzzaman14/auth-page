@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+
+}
+
+.details-container {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+    /* border: 2px solid; */
+}
+
+.title {
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.next-button {
+    width: 344px;
+    height: 56px;
+    background: #0858F7;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.input {
+    font-weight: 700;
+    margin-top: 40px;
+    width: 344px;
+    height: 56px;
+    padding-left: 16px;
+    border: none;
+    background: rgba(24, 24, 27, 0.05);
+    border-radius: 12px;
+}
+
+.forgetPass {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0858F7;
+}
+
+.signIn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #18181B;
+}
+
+.color {
+    color: #0858F7;
+
+}
+
+.banner {
+    width: 480px;
+    height: 664px;
+}
+
+/*  */
+
+
+.signIn {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.icon {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .details-container {
+        max-width: 100%;
+        margin: auto;
+        border: 2px solid red;
+    }
+
+    .container {
+        justify-content: space-around;
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .details-container {
+        border: 2px solid rgb(12, 191, 134);
+    }
+
+
+    .signIn {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        text-align: end;
+    }
+
+    .content {
+        margin-top: 20%;
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .input {
+        margin-top: 40px;
+        width: 344px;
+        height: 56px;
+        width: 100%;
+    }
+
+    .signIn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .icon {
+        top: 20px;
+        left: 20px;
+    }
+
+    .next-button {
+        width: 100%;
+        height: 56px;
+    }
+
+}
