@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './login.css'
 import './verification.css'
 import banner from '../images/Banner.png'
+import logo from '../images/Logo.png'
 import banner1 from '../images/Banner (1).png'
 import banner2 from '../images/Banner (2).png'
 
@@ -12,7 +13,7 @@ const Verification = () => {
         <div className='details-container'>
             <div className=' container'>
                 <div className='content containerStart'>
-                    <img className='icon' src="/logo.png" alt="" />
+                    <img className='icon' src={logo} alt="" />
                     <h2 className='title'>Enter the verification <br /> code to continue</h2>
                     <p className='message'>
                         We sent to <span style={{ color: '#0858F7' }}>hellouser@heads.design.</span> If you <br /> don’t see it, check your spam.

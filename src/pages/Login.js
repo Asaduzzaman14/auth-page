@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './login.css'
 import banner from '../images/Banner.png'
+import logo from '../images/Logo.png'
 import banner1 from '../images/Banner (1).png'
 import banner2 from '../images/Banner (2).png'
 
@@ -10,7 +11,7 @@ const Login = () => {
         <div className='details-container'>
             <div className='container'>
                 <div className='content'>
-                    <img className='icon' src="/logo.png" alt="" />
+                    <img className='icon' src={logo} alt="" />
                     <h2 className='title'>Welcome to Systempackage</h2>
 
                     <div className=''>
