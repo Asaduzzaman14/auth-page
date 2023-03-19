@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './login.css'
 
 const Login = () => {
@@ -6,17 +7,18 @@ const Login = () => {
         <div className='details-container'>
             <div className='container'>
                 <div className='content'>
-                    <img className='icon' src="/subtract.png" alt="" />
+                    <img className='icon' src="/logo.png" alt="" />
                     <h2 className='title'>Welcome to Systempackage</h2>
 
                     <div className=''>
-                        <input className='input' placeholder='Enter Your Email' type="email" />
+                        <input className='input-box' placeholder='Enter Your Email' type="email" />
+                        <input className='input-box' placeholder='Enter Your Password' type="password" />
                     </div>
-                    <div>
 
-                        <input className='input' placeholder='Enter Your Password' type="password" />
-                        <br />
-                        <button className='next-button'>Next</button>
+                    <div>
+                        <Link to='otp'>
+                            <button className='next-button'>Next</button>
+                        </Link>
                     </div>
                     <p className='forgetPass'>Forgot your password?</p>
 

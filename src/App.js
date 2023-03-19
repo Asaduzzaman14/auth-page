@@ -2,12 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './pages/Login';
 import Verification from './pages/Verification';
+import { Route, Router, Routes } from 'react-router-dom';
+import Success from './pages/Success';
 
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Verification />
+      <Routes>
+        <Route path='/' element={<Login />}> </Route>
+        <Route path='/otp' element={<Verification />}> </Route>
+        <Route path='/success' element={<Success />}> </Route>
+      </Routes>
     </div>
   );
 }
