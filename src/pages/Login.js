@@ -26,7 +26,11 @@ const Login = () => {
 
                 </div>
                 <div className='banner-section'>
-                    <img className='banner' src="/banner.png" alt="" />
+                    <div className='banners'>
+                        <img className='banner' src="/banner.png" alt="" />
+                        <img className='banner1' src="/banner (1).png" alt="" />
+                        <img className='banner2' src="/banner (2).png" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
